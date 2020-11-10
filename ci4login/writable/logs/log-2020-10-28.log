@@ -1,0 +1,148 @@
+CRITICAL - 2020-10-28 00:08:23 --> syntax error, unexpected '->' (T_OBJECT_OPERATOR)
+#0 C:\xampp\htdocs\ci4app\vendor\codeigniter4\framework\system\Router\Router.php(195): CodeIgniter\Router\Router->autoRoute('komik')
+#1 C:\xampp\htdocs\ci4app\vendor\codeigniter4\framework\system\CodeIgniter.php(793): CodeIgniter\Router\Router->handle('komik')
+#2 C:\xampp\htdocs\ci4app\vendor\codeigniter4\framework\system\CodeIgniter.php(364): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+#3 C:\xampp\htdocs\ci4app\vendor\codeigniter4\framework\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\ci4app\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#5 C:\xampp\htdocs\ci4app\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(34): require_once('C:\\xampp\\htdocs...')
+#6 {main}
+CRITICAL - 2020-10-28 00:12:55 --> Call to undefined method CodeIgniter\Validation\Validation::listErros()
+#0 C:\xampp\htdocs\ci4app\vendor\codeigniter4\framework\system\View\View.php(246): include()
+#1 C:\xampp\htdocs\ci4app\vendor\codeigniter4\framework\system\Common.php(1119): CodeIgniter\View\View->render('komik/create', Array, true)
+#2 C:\xampp\htdocs\ci4app\app\Controllers\Komik.php(56): view('komik/create', Array)
+#3 C:\xampp\htdocs\ci4app\vendor\codeigniter4\framework\system\CodeIgniter.php(918): App\Controllers\Komik->create()
+#4 C:\xampp\htdocs\ci4app\vendor\codeigniter4\framework\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Komik))
+#5 C:\xampp\htdocs\ci4app\vendor\codeigniter4\framework\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\ci4app\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#7 C:\xampp\htdocs\ci4app\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(34): require_once('C:\\xampp\\htdocs...')
+#8 {main}
+CRITICAL - 2020-10-28 00:28:02 --> Undefined property: CodeIgniter\Validation\Validation::$getError
+#0 C:\xampp\htdocs\ci4app\app\Views\komik\create.php(15): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined prope...', 'C:\\xampp\\htdocs...', 15, Array)
+#1 C:\xampp\htdocs\ci4app\vendor\codeigniter4\framework\system\View\View.php(246): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\ci4app\vendor\codeigniter4\framework\system\Common.php(1119): CodeIgniter\View\View->render('komik/create', Array, true)
+#3 C:\xampp\htdocs\ci4app\app\Controllers\Komik.php(56): view('komik/create', Array)
+#4 C:\xampp\htdocs\ci4app\vendor\codeigniter4\framework\system\CodeIgniter.php(918): App\Controllers\Komik->create()
+#5 C:\xampp\htdocs\ci4app\vendor\codeigniter4\framework\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Komik))
+#6 C:\xampp\htdocs\ci4app\vendor\codeigniter4\framework\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\ci4app\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#8 C:\xampp\htdocs\ci4app\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(34): require_once('C:\\xampp\\htdocs...')
+#9 {main}
+CRITICAL - 2020-10-28 06:34:41 --> Unable to connect to the database.
+#0 C:\xampp\htdocs\ci4app\vendor\codeigniter4\framework\system\Database\BaseConnection.php(646): CodeIgniter\Database\BaseConnection->initialize()
+#1 C:\xampp\htdocs\ci4app\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1860): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#2 C:\xampp\htdocs\ci4app\vendor\codeigniter4\framework\system\Model.php(462): CodeIgniter\Database\BaseBuilder->get()
+#3 C:\xampp\htdocs\ci4app\app\Models\KomikModel.php(16): CodeIgniter\Model->findAll()
+#4 C:\xampp\htdocs\ci4app\app\Controllers\Komik.php(22): App\Models\KomikModel->getKomik()
+#5 C:\xampp\htdocs\ci4app\vendor\codeigniter4\framework\system\CodeIgniter.php(918): App\Controllers\Komik->index()
+#6 C:\xampp\htdocs\ci4app\vendor\codeigniter4\framework\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Komik))
+#7 C:\xampp\htdocs\ci4app\vendor\codeigniter4\framework\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\ci4app\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\ci4app\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(34): require_once('C:\\xampp\\htdocs...')
+#10 {main}
+CRITICAL - 2020-10-28 06:35:10 --> Unable to connect to the database.
+#0 C:\xampp\htdocs\ci4app\vendor\codeigniter4\framework\system\Database\BaseConnection.php(646): CodeIgniter\Database\BaseConnection->initialize()
+#1 C:\xampp\htdocs\ci4app\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1860): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#2 C:\xampp\htdocs\ci4app\vendor\codeigniter4\framework\system\Model.php(462): CodeIgniter\Database\BaseBuilder->get()
+#3 C:\xampp\htdocs\ci4app\app\Models\KomikModel.php(16): CodeIgniter\Model->findAll()
+#4 C:\xampp\htdocs\ci4app\app\Controllers\Komik.php(22): App\Models\KomikModel->getKomik()
+#5 C:\xampp\htdocs\ci4app\vendor\codeigniter4\framework\system\CodeIgniter.php(918): App\Controllers\Komik->index()
+#6 C:\xampp\htdocs\ci4app\vendor\codeigniter4\framework\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Komik))
+#7 C:\xampp\htdocs\ci4app\vendor\codeigniter4\framework\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\ci4app\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\ci4app\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(34): require_once('C:\\xampp\\htdocs...')
+#10 {main}
+CRITICAL - 2020-10-28 06:35:22 --> Unable to connect to the database.
+#0 C:\xampp\htdocs\ci4app\vendor\codeigniter4\framework\system\Database\BaseConnection.php(646): CodeIgniter\Database\BaseConnection->initialize()
+#1 C:\xampp\htdocs\ci4app\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1860): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#2 C:\xampp\htdocs\ci4app\vendor\codeigniter4\framework\system\Model.php(462): CodeIgniter\Database\BaseBuilder->get()
+#3 C:\xampp\htdocs\ci4app\app\Models\KomikModel.php(16): CodeIgniter\Model->findAll()
+#4 C:\xampp\htdocs\ci4app\app\Controllers\Komik.php(22): App\Models\KomikModel->getKomik()
+#5 C:\xampp\htdocs\ci4app\vendor\codeigniter4\framework\system\CodeIgniter.php(918): App\Controllers\Komik->index()
+#6 C:\xampp\htdocs\ci4app\vendor\codeigniter4\framework\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Komik))
+#7 C:\xampp\htdocs\ci4app\vendor\codeigniter4\framework\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\ci4app\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\ci4app\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(34): require_once('C:\\xampp\\htdocs...')
+#10 {main}
+CRITICAL - 2020-10-28 12:35:14 --> syntax error, unexpected ']', expecting ')'
+#0 C:\xampp\htdocs\ci4app\vendor\codeigniter4\framework\system\Autoloader\Autoloader.php(296): CodeIgniter\Autoloader\Autoloader->requireFile('C:\\xampp\\htdocs...')
+#1 C:\xampp\htdocs\ci4app\vendor\codeigniter4\framework\system\Autoloader\Autoloader.php(258): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers...')
+#2 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers...')
+#3 [internal function]: spl_autoload_call('App\\Controllers...')
+#4 C:\xampp\htdocs\ci4app\vendor\codeigniter4\framework\system\CodeIgniter.php(869): class_exists('\\App\\Controller...', true)
+#5 C:\xampp\htdocs\ci4app\vendor\codeigniter4\framework\system\CodeIgniter.php(394): CodeIgniter\CodeIgniter->startController()
+#6 C:\xampp\htdocs\ci4app\vendor\codeigniter4\framework\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\ci4app\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#8 C:\xampp\htdocs\ci4app\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(34): require_once('C:\\xampp\\htdocs...')
+#9 {main}
+CRITICAL - 2020-10-28 13:33:58 --> unlink(img/): Is a directory
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'unlink(img/): I...', 'C:\\xampp\\htdocs...', 121, Array)
+#1 C:\xampp\htdocs\ci4app\app\Controllers\Komik.php(121): unlink('img/')
+#2 C:\xampp\htdocs\ci4app\vendor\codeigniter4\framework\system\CodeIgniter.php(918): App\Controllers\Komik->delete('12')
+#3 C:\xampp\htdocs\ci4app\vendor\codeigniter4\framework\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Komik))
+#4 C:\xampp\htdocs\ci4app\vendor\codeigniter4\framework\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\ci4app\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#6 C:\xampp\htdocs\ci4app\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(34): require_once('C:\\xampp\\htdocs...')
+#7 {main}
+CRITICAL - 2020-10-28 13:35:20 --> unlink(img/): Is a directory
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'unlink(img/): I...', 'C:\\xampp\\htdocs...', 123, Array)
+#1 C:\xampp\htdocs\ci4app\app\Controllers\Komik.php(123): unlink('img/')
+#2 C:\xampp\htdocs\ci4app\vendor\codeigniter4\framework\system\CodeIgniter.php(918): App\Controllers\Komik->delete('12')
+#3 C:\xampp\htdocs\ci4app\vendor\codeigniter4\framework\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Komik))
+#4 C:\xampp\htdocs\ci4app\vendor\codeigniter4\framework\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\ci4app\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#6 C:\xampp\htdocs\ci4app\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(34): require_once('C:\\xampp\\htdocs...')
+#7 {main}
+CRITICAL - 2020-10-28 13:36:22 --> unlink(img/): Is a directory
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'unlink(img/): I...', 'C:\\xampp\\htdocs...', 123, Array)
+#1 C:\xampp\htdocs\ci4app\app\Controllers\Komik.php(123): unlink('img/')
+#2 C:\xampp\htdocs\ci4app\vendor\codeigniter4\framework\system\CodeIgniter.php(918): App\Controllers\Komik->delete('12')
+#3 C:\xampp\htdocs\ci4app\vendor\codeigniter4\framework\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Komik))
+#4 C:\xampp\htdocs\ci4app\vendor\codeigniter4\framework\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\ci4app\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#6 C:\xampp\htdocs\ci4app\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(34): require_once('C:\\xampp\\htdocs...')
+#7 {main}
+CRITICAL - 2020-10-28 13:38:10 --> unlink(img/): Is a directory
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'unlink(img/): I...', 'C:\\xampp\\htdocs...', 123, Array)
+#1 C:\xampp\htdocs\ci4app\app\Controllers\Komik.php(123): unlink('img/')
+#2 C:\xampp\htdocs\ci4app\vendor\codeigniter4\framework\system\CodeIgniter.php(918): App\Controllers\Komik->delete('12')
+#3 C:\xampp\htdocs\ci4app\vendor\codeigniter4\framework\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Komik))
+#4 C:\xampp\htdocs\ci4app\vendor\codeigniter4\framework\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\ci4app\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#6 C:\xampp\htdocs\ci4app\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(34): require_once('C:\\xampp\\htdocs...')
+#7 {main}
+CRITICAL - 2020-10-28 13:39:03 --> unlink(img/): Is a directory
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'unlink(img/): I...', 'C:\\xampp\\htdocs...', 123, Array)
+#1 C:\xampp\htdocs\ci4app\app\Controllers\Komik.php(123): unlink('img/')
+#2 C:\xampp\htdocs\ci4app\vendor\codeigniter4\framework\system\CodeIgniter.php(918): App\Controllers\Komik->delete('12')
+#3 C:\xampp\htdocs\ci4app\vendor\codeigniter4\framework\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Komik))
+#4 C:\xampp\htdocs\ci4app\vendor\codeigniter4\framework\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\ci4app\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#6 C:\xampp\htdocs\ci4app\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(34): require_once('C:\\xampp\\htdocs...')
+#7 {main}
+CRITICAL - 2020-10-28 13:47:10 --> unlink(img/): Is a directory
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'unlink(img/): I...', 'C:\\xampp\\htdocs...', 123, Array)
+#1 C:\xampp\htdocs\ci4app\app\Controllers\Komik.php(123): unlink('img/')
+#2 C:\xampp\htdocs\ci4app\vendor\codeigniter4\framework\system\CodeIgniter.php(918): App\Controllers\Komik->delete('14')
+#3 C:\xampp\htdocs\ci4app\vendor\codeigniter4\framework\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Komik))
+#4 C:\xampp\htdocs\ci4app\vendor\codeigniter4\framework\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\ci4app\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#6 C:\xampp\htdocs\ci4app\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(34): require_once('C:\\xampp\\htdocs...')
+#7 {main}
+CRITICAL - 2020-10-28 13:47:41 --> unlink(img/  naruto.jpg): No such file or directory
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'unlink(img/  na...', 'C:\\xampp\\htdocs...', 190, Array)
+#1 C:\xampp\htdocs\ci4app\app\Controllers\Komik.php(190): unlink('img/  naruto.jp...')
+#2 C:\xampp\htdocs\ci4app\vendor\codeigniter4\framework\system\CodeIgniter.php(918): App\Controllers\Komik->update('10')
+#3 C:\xampp\htdocs\ci4app\vendor\codeigniter4\framework\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Komik))
+#4 C:\xampp\htdocs\ci4app\vendor\codeigniter4\framework\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\ci4app\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#6 C:\xampp\htdocs\ci4app\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(34): require_once('C:\\xampp\\htdocs...')
+#7 {main}
+CRITICAL - 2020-10-28 15:48:54 --> unlink(img/1603911030_585421a3df96a3e3d1d9.jpg): No such file or directory
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'unlink(img/1603...', 'C:\\xampp\\htdocs...', 123, Array)
+#1 C:\xampp\htdocs\ci4app\app\Controllers\Komik.php(123): unlink('img/1603911030_...')
+#2 C:\xampp\htdocs\ci4app\vendor\codeigniter4\framework\system\CodeIgniter.php(918): App\Controllers\Komik->delete('17')
+#3 C:\xampp\htdocs\ci4app\vendor\codeigniter4\framework\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Komik))
+#4 C:\xampp\htdocs\ci4app\vendor\codeigniter4\framework\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\ci4app\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#6 C:\xampp\htdocs\ci4app\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(34): require_once('C:\\xampp\\htdocs...')
+#7 {main}
